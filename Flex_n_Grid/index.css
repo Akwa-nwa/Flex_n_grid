@@ -1,0 +1,88 @@
+:root {
+  --background-color: lightgray;
+  --color: lightgray;
+  --padding: 2em;
+  --font-family: "Lexend Deca", cursive;
+  --font-size: 15px;
+  --font-weight: 400;
+  --height: 100vh;
+  --padding-bottom: 2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  background-color: var(--background-color);
+  width: 100%;
+}
+main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  height: var(--height);
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  padding: var(--padding);
+  width: 100%;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: var(--padding);
+  width: 100%;
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: var(--padding);
+  width: 100%;
+}
+button {
+  background-color: lightgray;
+  font-family: var(--font-family);
+  border-radius: 100px;
+  padding: 10px;
+  border: none;
+}
+button:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid white;
+  transition: 0.4s;
+}
+div {
+  color: lightgray;
+  font-family: var(--font-family);
+}
+.b1 {
+  color: hsl(31, 77%, 52%);
+}
+.b2 {
+  color: hsl(184, 100%, 22%);
+}
+.b3 {
+  color: hsl(179, 100%, 13%);
+}
+svg {
+  padding-bottom: var(--padding-bottom);
+}
+h2 {
+  padding-bottom: var(--padding-bottom);
+}
+p {
+  padding-bottom: 5em;
+}
+@media all and (min-width: 0px) and (max-width: 992px) {
+  main {
+    display: block;
+    width: 100%;
+  }
+}
